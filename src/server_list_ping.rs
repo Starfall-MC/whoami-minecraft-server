@@ -36,7 +36,7 @@ impl NetworkCallbacks for Callbacks {
             max_players: 420,
             player_sample: vec![],
             description: text,
-            favicon_png: include_bytes!("../command-block-icon.png"),
+            favicon_png: include_bytes!("../assets/command-block-icon.png"),
             version_name: MINECRAFT_VERSION.to_owned(),
             protocol: PROTOCOL_VERSION,
         }
