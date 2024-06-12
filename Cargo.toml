@@ -1,0 +1,9 @@
+[package]
+name = "whoami-minecraft"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+async-trait = "0.1.80"
+rand = "0.8.5"
+valence = { git = "https://github.com/valence-rs/valence", rev = "9f9d284c", default-features = false, features = ["network"] }
