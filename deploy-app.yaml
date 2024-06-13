@@ -5,6 +5,8 @@ metadata:
 spec:
   type: LoadBalancer
   externalTrafficPolicy: Local
+  # prefer connecting to same pod, to preserve source IP
+  sessionAffinity: None
   ports:
     - name: minecraft
       port: 25565

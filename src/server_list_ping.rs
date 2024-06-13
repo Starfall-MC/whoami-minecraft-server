@@ -17,13 +17,12 @@ impl NetworkCallbacks for Callbacks {
         remote_addr: SocketAddr,
         handshake_data: &HandshakeData,
     ) -> ServerListPing {
-        let mut text =
-            Text::text("") + Text::text("Connect to get technical info! ").color(Color::GOLD);
-        text += Text::text("You are ");
+        let mut text = Text::text("") + Text::text("Connect to get info! ").color(Color::GOLD);
+        text += Text::text("You're ");
         text += Text::text(format!("{remote_addr}"))
             .color(Color::DARK_PURPLE)
             .underlined();
-        text += Text::text(" and you're talking to the server at ");
+        text += Text::text(", talking to ");
         text += Text::text(format!(
             "{}:{}",
             handshake_data.server_address, handshake_data.server_port
